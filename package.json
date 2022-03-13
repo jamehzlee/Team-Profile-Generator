@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index"
+    "test": "jest",
+    "start": "node index",
+    "install": "npm i inquirer && npm i jest"
   },
   "repository": {
     "type": "git",
