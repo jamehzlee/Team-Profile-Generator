@@ -1,4 +1,4 @@
-<h1><a href="https://jamehzlee.github.io/Team-Profile-Generator/">Team Profile Generator</a></h1>
+<h1>Team Profile Generator</h1>
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
