@@ -1,7 +1,7 @@
-// create the team
+// Creates the team
 const generateTeam = team => {
 
-    // create the manager html
+    // Creates the manager html
     const generateManager = manager => {
         return `
         <div class="card employee-card">
@@ -20,7 +20,7 @@ const generateTeam = team => {
         `;
     };
 
-    // create the html for engineers
+    // Creates the html for engineers
     const generateEngineer = engineer => {
         return `
         <div class="card employee-card">
@@ -39,7 +39,7 @@ const generateTeam = team => {
         `;
     };
 
-    // create the html for interns
+    // Creates the html for interns
     const generateIntern = intern => {
         return `
         <div class="card employee-card">
@@ -60,7 +60,7 @@ const generateTeam = team => {
 
     const html = [];
 
-    // ADD MANAGER TO ARRAY
+    // Adds Manager to array
     html.push(
         team
         .filter(employee => employee.getRole() === "Manager")
@@ -68,7 +68,7 @@ const generateTeam = team => {
         .join("")
     );
 
-    // ADD ENGINEERS TO ARRAY
+    // Adds Engineer to array
     html.push(
         team
         .filter(employee => employee.getRole() === "Engineer")
@@ -76,7 +76,7 @@ const generateTeam = team => {
         .join("")
     );
 
-    // ADD INTERNS TO ARRAY
+    // Adds Intern to array
     html.push(
         team
         .filter(employee => employee.getRole() === "Intern")
@@ -88,7 +88,7 @@ const generateTeam = team => {
 
 }
 
-// export function to generate entire page
+// Export function to generate entire page
 module.exports = team => {
 
     return `
